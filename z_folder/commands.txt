@@ -1,0 +1,2 @@
+docker run -d -p 27017:27017 --name my_mongodb mongo
+docker run -p 27017:27017 -it mongo:4.4 mongo --username application_user --password application_pass --host 192.168.0.163 --authenticationDatabase application_database --eval "db.adminCommand({ listDatabases: 1 })"
